@@ -9,8 +9,53 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+.header {
+    background-color: #3c9ae8;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
 
-header, footer {
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #2b79d5;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #1b4f9b;
+    border-radius: 5px;
+}
+
+/*header, footer {
     text-align: center;
     padding: 20px;
     background-color: #222;
@@ -49,6 +94,7 @@ p {
 .navbar ul li a:hover {
     color: #f4f4f4;
 }
+    */
 
 .main-content {
     display: flex;
