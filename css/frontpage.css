@@ -144,13 +144,11 @@
         }
 
         .footer {
+            background-color: #2b79d5;
+            color: white;
             text-align: center;
             padding: 20px;
-            background: transparent;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: 30px;
         }
 
         @media (max-width: 768px){
