@@ -25,8 +25,8 @@
         <div class="main-content">
             <div class="sidebar">
                 <h2>Quick Links</h2><hr>
-                <a href="internship.html">Find Internships</a><hr>
-                <a href="post internship.html">Post an Internship</a><hr>
+                <a href="#" class="disabled">Find Internships</a><hr>
+                <a href="#">Post an Internship</a><hr>
                 <a href="tips and resources.html">Tips & Resources</a><hr>
                 <a href="user reviews.html">User Reviews</a><hr>
                 <a href="career services.html">Career Services</a><hr>
@@ -36,11 +36,13 @@
                 <h2>Find Your Ideal Internship</h2>
                 <p>Stay updated with real-time alerts for internship opportunities that suit your skills and preferences.</p>
                 <div class="form">
+                    <form action="php/login.php" method="post">
                     <h3>Login to Your Account</h3>
                     <input type="email" name="email" placeholder="Enter Your Email" required>
                     <input type="password" name="password" placeholder="Enter Your Password" required>
-                    <button type="submit">Login</button>
+                    <button type="submit" name="login">Login</button>
                     <p>Don't have an account? <a href="signup.html">Sign up</a> here</p>
+                    </form>
                 </div>
             </div>
         </div>
