@@ -145,13 +145,13 @@ p {
     width: 70%;
 }
 
-.internship {
+/* .internship {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .internship h3 {
     color: #3c9ae8;
@@ -189,3 +189,29 @@ p {
     border-radius: 4px;
     cursor: pointer;
 }
+
+.internship {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Vertically aligns image and content */
+    gap: 20px; /* Space between the image and content */
+}
+
+.internship-image {
+    width: 150px; /* Set fixed width for the image */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Round the corners of the image */
+    object-fit: cover; /* Ensures the image is neatly cropped */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow around the image */
+}
+
+.internship-content {
+    flex: 1; /* Allows content to take the remaining space */
+}
+
+
+

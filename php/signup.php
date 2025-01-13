@@ -1,9 +1,10 @@
 <?php
 	require_once 'dbconf.php';
-	function AddData($connect,$fname,$lname,$phone,$email,$password){
+	function AddData($connect,$fname,$lname,$phone,$role,$email,$password){
 		try {
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-			$sql = "INSERT INTO user VALUES('$fname','$lname','$phone','$email','$hashed_password')";
+			$sql = "INSERT INTO user (fname,lname,phone,role,email,password)
+			VALUES('$fname','$lname','$phone','$role','$email','$hashed_password')";
 			$result = mysqli_query($connect,$sql);
 			if ($result) {
 				//echo "New student record created sucessfully";
@@ -21,10 +22,11 @@
 		$fname=$_POST['fname'];
         $lname=$_POST['lname'];
         $phone=$_POST['phone'];
+		$role=$_POST['role'];
         $email=$_POST['email'];
         $password=$_POST['password'];
 
-		AddData($connect,$fname,$lname,$phone,$email,$password);
+		AddData($connect,$fname,$lname,$phone,$role,$email,$password);
 	}
 
 	?>
