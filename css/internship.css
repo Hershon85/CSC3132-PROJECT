@@ -150,6 +150,7 @@ body {
     display: flex; 
     align-items: center; 
     gap: 20px; 
+}
 
 .internship-image {
     width: 150px; 
@@ -162,3 +163,5 @@ body {
 .internship-content {
     flex: 1; 
 }
+
+
