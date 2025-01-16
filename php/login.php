@@ -21,9 +21,9 @@ if (isset($_POST['login'])) {
             $_SESSION['role'] = $row['role'];
             
             if ($row['role'] === 'employer') {
-                header("Location: ../post internship.html");
+                header("Location: ../post internship.php");
             } elseif ($row['role'] === 'jobseeker') {
-                header("Location: ../internship.html");
+                header("Location: ../internship.php");
             }
             exit; // Ensure no further code runs after redirection
         } else {
