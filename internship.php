@@ -15,8 +15,8 @@
     <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
     </div>
     
@@ -63,7 +63,7 @@
                 <p><strong>Location:</strong> New York, NY (Remote)</p>
                 <p><strong>Duration:</strong> 3 Months</p>
                 <p><strong>Field:</strong> Technology</p>
-                <button type="submit" href="apply now.html">Apply Now</button>
+                <button type="submit" href="apply now.php">Apply Now</button>
                 </div>
             </div>
 
