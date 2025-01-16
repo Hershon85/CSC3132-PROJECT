@@ -36,7 +36,6 @@
 
 .form {
     text-align: center;
-    /*width: 40%;*/
     background: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -65,24 +64,21 @@
     border: 1px solid #e81313;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #fff; /* Match the input background color */
-    appearance: none; /* Remove browser-specific styles */
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
-    cursor: pointer; /* Pointer cursor for better UX */
+    background-color: #fff; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    cursor: pointer; 
 }
 
-/* Optional: Add padding-right to account for a custom dropdown arrow */
 .form select {
     padding-right: 30px;
 }
 
-/* Optional: Remove the default dropdown arrow in IE */
 .form select::-ms-expand {
     display: none;
 }
 
-/* Optional: Custom arrow for dropdown menu using pseudo-elements */
 .form select {
     position: relative;
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="red" d="M2 0L0 2h4z"/></svg>');
